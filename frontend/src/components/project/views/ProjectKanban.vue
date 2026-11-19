@@ -930,6 +930,7 @@ $filter-container-height: '1rem - #{$switch-view-height}';
 		max-block-size: calc(100% - 1rem); // 1rem spacing to the bottom
 		min-block-size: 20px;
 		inline-size: $bucket-width;
+		flex-shrink: 0;
 		display: flex;
 		flex-direction: column;
 		overflow: hidden; // Make sure the edges are always rounded

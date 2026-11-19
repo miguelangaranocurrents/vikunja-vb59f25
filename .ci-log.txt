@@ -1,0 +1,982 @@
+e2e	Run e2e tests	﻿2026-11-10T19:59:15.9703987Z ##[group]Run ../vikunja web > /tmp/vikunja.log 2>&1 &
+e2e	Run e2e tests	2026-11-10T19:59:15.9704521Z [36;1m../vikunja web > /tmp/vikunja.log 2>&1 &[0m
+e2e	Run e2e tests	2026-11-10T19:59:15.9704955Z [36;1mpnpm run preview > /tmp/preview.log 2>&1 &[0m
+e2e	Run e2e tests	2026-11-10T19:59:15.9705587Z [36;1mpnpx wait-on http-get://127.0.0.1:4173 http-get://127.0.0.1:3456/api/v1/info --timeout 60000[0m
+e2e	Run e2e tests	2026-11-10T19:59:15.9706155Z [36;1mpnpm run test:e2e \[0m
+e2e	Run e2e tests	2026-11-10T19:59:15.9706447Z [36;1m  tests/e2e/project \[0m
+e2e	Run e2e tests	2026-11-10T19:59:15.9706757Z [36;1m  tests/e2e/misc \[0m
+e2e	Run e2e tests	2026-11-10T19:59:15.9707040Z [36;1m  tests/e2e/editor \[0m
+e2e	Run e2e tests	2026-11-10T19:59:15.9707317Z [36;1m  tests/e2e/migrate \[0m
+e2e	Run e2e tests	2026-11-10T19:59:15.9707628Z [36;1m  tests/e2e/task/comment-[0m
+e2e	Run e2e tests	2026-11-10T19:59:15.9708045Z shell: sh -e {0}
+e2e	Run e2e tests	2026-11-10T19:59:15.9708292Z env:
+e2e	Run e2e tests	2026-11-10T19:59:15.9708536Z   GOTOOLCHAIN: local
+e2e	Run e2e tests	2026-11-10T19:59:15.9708813Z   CYPRESS_INSTALL_BINARY: 0
+e2e	Run e2e tests	2026-11-10T19:59:15.9709131Z   PUPPETEER_SKIP_DOWNLOAD: true
+e2e	Run e2e tests	2026-11-10T19:59:15.9709467Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+e2e	Run e2e tests	2026-11-10T19:59:15.9710316Z   PNPM_HOME: /github/home/setup-pnpm/node_modules/.bin
+e2e	Run e2e tests	2026-11-10T19:59:15.9710695Z   CI: true
+e2e	Run e2e tests	2026-11-10T19:59:15.9710974Z   PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS: 1
+e2e	Run e2e tests	2026-11-10T19:59:15.9711368Z   TEST_SECRET: averyLongSecretToSe33dtheDB
+e2e	Run e2e tests	2026-11-10T19:59:15.9711810Z   VIKUNJA_SERVICE_TESTINGTOKEN: averyLongSecretToSe33dtheDB
+e2e	Run e2e tests	2026-11-10T19:59:15.9712242Z   VIKUNJA_LOG_LEVEL: DEBUG
+e2e	Run e2e tests	2026-11-10T19:59:15.9712532Z   VIKUNJA_CORS_ENABLE: 1
+e2e	Run e2e tests	2026-11-10T19:59:15.9712861Z   VIKUNJA_SERVICE_PUBLICURL: http://127.0.0.1:3456
+e2e	Run e2e tests	2026-11-10T19:59:15.9713246Z   VIKUNJA_DATABASE_PATH: memory
+e2e	Run e2e tests	2026-11-10T19:59:15.9713540Z   VIKUNJA_DATABASE_TYPE: sqlite
+e2e	Run e2e tests	2026-11-10T19:59:15.9713831Z   VIKUNJA_MAILER_ENABLED: 0
+e2e	Run e2e tests	2026-11-10T19:59:15.9714141Z   VIKUNJA_RATELIMIT_NOAUTHLIMIT: 1000
+e2e	Run e2e tests	2026-11-10T19:59:15.9714464Z ##[endgroup]
+e2e	Run e2e tests	2026-11-10T19:59:16.6071679Z Progress: resolved 1, reused 0, downloaded 0, added 0
+e2e	Run e2e tests	2026-11-10T19:59:17.0146360Z Packages: +39
+e2e	Run e2e tests	2026-11-10T19:59:17.0146865Z +++++++++++++++++++++++++++++++++++++++
+e2e	Run e2e tests	2026-11-10T19:59:17.1474804Z Progress: resolved 39, reused 0, downloaded 39, added 39, done
+e2e	Run e2e tests	2026-11-10T19:59:18.1428245Z $ playwright test tests/e2e/project tests/e2e/misc tests/e2e/editor tests/e2e/migrate tests/e2e/task/comment-
+e2e	Run e2e tests	2026-11-10T19:59:19.2849108Z 
+e2e	Run e2e tests	2026-11-10T19:59:19.2849843Z Running 146 tests using 1 worker
+e2e	Run e2e tests	2026-11-10T19:59:19.2850398Z 
+e2e	Run e2e tests	2026-11-10T19:59:19.7604722Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T19:59:27.5074489Z   ✘    1 [chromium] › tests/e2e/editor/copy-as-text.spec.ts:10:2 › Editor copy as plain text › keeps the list markers of a copied bullet list (7.5s)
+e2e	Run e2e tests	2026-11-10T19:59:28.0971191Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T19:59:35.7432146Z   ✘    2 [chromium] › tests/e2e/editor/copy-as-text.spec.ts:10:2 › Editor copy as plain text › keeps the list markers of a copied bullet list (retry #1) (7.6s)
+e2e	Run e2e tests	2026-11-10T19:59:36.2346001Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T19:59:43.8755885Z   ✘    3 [chromium] › tests/e2e/editor/copy-as-text.spec.ts:10:2 › Editor copy as plain text › keeps the list markers of a copied bullet list (retry #2) (7.5s)
+e2e	Run e2e tests	2026-11-10T19:59:44.3809020Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T19:59:46.9999365Z   ✓    4 [chromium] › tests/e2e/editor/dblclick-to-edit.spec.ts:11:2 › Editor double-click to edit › keeps the clicked text in place and puts the cursor there (2.5s)
+e2e	Run e2e tests	2026-11-10T19:59:49.8679825Z   ✓    5 [chromium] › tests/e2e/editor/emoji-autocomplete.spec.ts:18:2 › Emoji Autocomplete › Inserts the unicode glyph when selecting from the popup (2.8s)
+e2e	Run e2e tests	2026-11-10T19:59:52.7867746Z   ✓    6 [chromium] › tests/e2e/editor/emoji-autocomplete.spec.ts:59:2 › Emoji Autocomplete › Does not open the popup when ":" follows a non-whitespace char (2.8s)
+e2e	Run e2e tests	2026-11-10T19:59:57.9743543Z   ✓    7 [chromium] › tests/e2e/editor/image-alt-text.spec.ts:35:2 › Editor image alt text › sets alt text on a selected image via the image bubble menu (5.0s)
+e2e	Run e2e tests	2026-11-10T20:00:00.9195037Z   ✓    8 [chromium] › tests/e2e/editor/image-alt-text.spec.ts:80:2 › Editor image alt text › does not wipe existing alt text when the prompt is cancelled (2.9s)
+e2e	Run e2e tests	2026-11-10T20:00:03.7295884Z   ✓    9 [chromium] › tests/e2e/editor/image-alt-text.spec.ts:114:2 › Editor image alt text › prompts for alt text right after inserting an uploaded image (2.7s)
+e2e	Run e2e tests	2026-11-10T20:00:06.4936346Z   ✓   10 [chromium] › tests/e2e/editor/image-alt-text.spec.ts:141:2 › Editor image alt text › leaves an inserted image without alt text when the prompt is cancelled (2.6s)
+e2e	Run e2e tests	2026-11-10T20:00:08.9907894Z   ✓   11 [chromium] › tests/e2e/editor/link-prompt-kanban-popup.spec.ts:13:2 › Editor link prompt inside the Kanban task popup › creates a link in the description when opened as the Kanban popup (2.4s)
+e2e	Run e2e tests	2026-11-10T20:00:11.3847596Z   ✓   12 [chromium] › tests/e2e/editor/link-prompt-kanban-popup.spec.ts:71:2 › Editor link prompt inside the Kanban task popup › Escape cancels the link prompt without closing the task dialog (2.3s)
+e2e	Run e2e tests	2026-11-10T20:00:14.3456912Z anchor: {"x":353,"y":338.703125,"width":44,"height":22} popup: {"x":353,"y":368.703125,"width":199.15625,"height":133.5}
+e2e	Run e2e tests	2026-11-10T20:00:14.6034182Z   ✓   13 [chromium] › tests/e2e/editor/suggestion-popup-position.spec.ts:29:2 › Suggestion popup positioning › the popup is anchored to the suggestion text (3.1s)
+e2e	Run e2e tests	2026-11-10T20:00:18.2096086Z before -> anchor: {"x":353,"y":572.703125,"width":44,"height":22} popup: {"x":353,"y":431.203125,"width":199.15625,"height":133.5}
+e2e	Run e2e tests	2026-11-10T20:00:18.2096905Z after  -> anchor: {"x":353,"y":772.703125,"width":44,"height":22} popup: {"x":353,"y":631.203125,"width":199.15625,"height":133.5}
+e2e	Run e2e tests	2026-11-10T20:00:18.4460495Z   ✓   14 [chromium] › tests/e2e/editor/suggestion-popup-position.spec.ts:61:2 › Suggestion popup positioning › the popup follows the text when the page scrolls (3.8s)
+e2e	Run e2e tests	2026-11-10T20:00:20.8981871Z   ✓   15 [chromium] › tests/e2e/editor/toolbar-navigation.spec.ts:11:2 › Editor toolbar keyboard navigation › roving tabindex: arrow keys move between buttons, Tab leaves the toolbar (2.4s)
+e2e	Run e2e tests	2026-11-10T20:00:23.4781087Z   ✓   16 [chromium] › tests/e2e/editor/toolbar-navigation.spec.ts:87:2 › Editor toolbar overflow menu › arrow keys skip buttons moved into the menu (2.5s)
+e2e	Run e2e tests	2026-11-10T20:00:25.9200876Z   ✓   17 [chromium] › tests/e2e/editor/toolbar-navigation.spec.ts:122:2 › Editor toolbar overflow menu › the menu opens from the keyboard and keeps its items out of the toolbar tab order (2.4s)
+e2e	Run e2e tests	2026-11-10T20:00:28.4303619Z   ✓   18 [chromium] › tests/e2e/editor/toolbar-navigation.spec.ts:152:2 › Editor toolbar overflow menu › formats applied from the menu show as active (2.4s)
+e2e	Run e2e tests	2026-11-10T20:00:31.5819079Z   ✓   19 [chromium] › tests/e2e/editor/toolbar-navigation.spec.ts:166:2 › Editor toolbar overflow menu › every menu item can be scrolled into view on a phone (3.1s)
+e2e	Run e2e tests	2026-11-10T20:00:33.9690397Z   ✓   20 [chromium] › tests/e2e/editor/toolbar-navigation.spec.ts:179:2 › Editor toolbar overflow menu › the menu opens below the fixed navbar (2.3s)
+e2e	Run e2e tests	2026-11-10T20:00:36.4727672Z   ✓   21 [chromium] › tests/e2e/migrate/availability.spec.ts:3:1 › runtime configuration gates provider links and operations (2.4s)
+e2e	Run e2e tests	2026-11-10T20:00:39.4581763Z   ✓   22 [chromium] › tests/e2e/migrate/csv.spec.ts:3:1 › CSV detection, preview and import persist after reload (2.9s)
+e2e	Run e2e tests	2026-11-10T20:00:46.1899490Z   ✘   23 [chromium] › tests/e2e/migrate/csv.spec.ts:18:1 › CSV import page highlights the import item in the settings navigation (6.6s)
+e2e	Run e2e tests	2026-11-10T20:00:46.9127395Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T20:00:53.7931966Z   ✘   24 [chromium] › tests/e2e/migrate/csv.spec.ts:18:1 › CSV import page highlights the import item in the settings navigation (retry #1) (6.9s)
+e2e	Run e2e tests	2026-11-10T20:00:54.2884401Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T20:01:01.1717521Z   ✘   25 [chromium] › tests/e2e/migrate/csv.spec.ts:18:1 › CSV import page highlights the import item in the settings navigation (retry #2) (6.8s)
+e2e	Run e2e tests	2026-11-10T20:01:01.6594232Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T20:01:03.6582933Z   ✓   26 [chromium] › tests/e2e/misc/menu.spec.ts:10:2 › The Menu › Is visible by default on desktop (1.9s)
+e2e	Run e2e tests	2026-11-10T20:01:05.4412470Z   ✓   27 [chromium] › tests/e2e/misc/menu.spec.ts:14:2 › The Menu › Can be hidden on desktop (1.7s)
+e2e	Run e2e tests	2026-11-10T20:01:07.0930561Z   ✓   28 [chromium] › tests/e2e/misc/menu.spec.ts:19:2 › The Menu › Can be toggled with keyboard shortcut on desktop (1.6s)
+e2e	Run e2e tests	2026-11-10T20:01:08.5652946Z   ✓   29 [chromium] › tests/e2e/misc/menu.spec.ts:30:2 › The Menu › Is hidden by default on mobile (1.4s)
+e2e	Run e2e tests	2026-11-10T20:01:10.3019349Z   ✓   30 [chromium] › tests/e2e/misc/menu.spec.ts:35:2 › The Menu › Is can be shown on mobile (1.7s)
+e2e	Run e2e tests	2026-11-10T20:01:15.0803805Z   ✓   31 [chromium] › tests/e2e/misc/notification-inbox.spec.ts:10:1 › notification read and clear state survives reload (4.6s)
+e2e	Run e2e tests	2026-11-10T20:01:16.9718265Z   ✓   32 [chromium] › tests/e2e/misc/notification-inbox.spec.ts:49:1 › the inbox loads older notifications one page at a time (1.8s)
+e2e	Run e2e tests	2026-11-10T20:01:20.2441606Z   ✓   33 [chromium] › tests/e2e/misc/notification-inbox.spec.ts:76:1 › fetches the inbox once per page load (3.2s)
+e2e	Run e2e tests	2026-11-10T20:01:32.7345655Z   ✓   34 [chromium] › tests/e2e/misc/notification-inbox.spec.ts:97:1 › keeps polling the inbox when the websocket is unavailable (12.4s)
+e2e	Run e2e tests	2026-11-10T20:01:34.7393753Z   ✓   35 [chromium] › tests/e2e/misc/notifications.spec.ts:4:2 › Duplicate Notifications › Merges duplicate notifications and shows count (2.0s)
+e2e	Run e2e tests	2026-11-10T20:01:35.2211739Z   ✓   36 [chromium] › tests/e2e/misc/pwa-banners.spec.ts:23:2 › PWA banners › Are hidden on the login page (444ms)
+e2e	Run e2e tests	2026-11-10T20:01:37.2291865Z   ✓   37 [chromium] › tests/e2e/misc/pwa-banners.spec.ts:28:2 › PWA banners › Show after logging in, including an update found on the login page (1.9s)
+e2e	Run e2e tests	2026-11-10T20:01:39.4800312Z   ✓   38 [chromium] › tests/e2e/misc/quick-actions-ime.spec.ts:20:2 › Quick actions with an IME keyboard › Opens the tapped task while the search word is still being composed (2.2s)
+e2e	Run e2e tests	2026-11-10T20:01:46.6652078Z   ✘   39 [chromium] › tests/e2e/misc/quick-actions.spec.ts:7:2 › Quick actions › Creates a new task named like an existing project (7.1s)
+e2e	Run e2e tests	2026-11-10T20:01:47.2074399Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T20:01:54.5330607Z   ✘   40 [chromium] › tests/e2e/misc/quick-actions.spec.ts:7:2 › Quick actions › Creates a new task named like an existing project (retry #1) (7.2s)
+e2e	Run e2e tests	2026-11-10T20:01:55.0215589Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T20:02:02.4521907Z   ✘   41 [chromium] › tests/e2e/misc/quick-actions.spec.ts:7:2 › Quick actions › Creates a new task named like an existing project (retry #2) (7.3s)
+e2e	Run e2e tests	2026-11-10T20:02:02.9463648Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T20:02:07.6687860Z   ✓   42 [chromium] › tests/e2e/misc/sidebar-resize.spec.ts:35:2 › Sidebar Resize › should not reload tasks when resizing the sidebar (4.6s)
+e2e	Run e2e tests	2026-11-10T20:02:11.8326398Z   ✓   43 [chromium] › tests/e2e/misc/sidebar-resize.spec.ts:76:2 › Sidebar Resize › should persist sidebar width after resize (4.1s)
+e2e	Run e2e tests	2026-11-10T20:02:13.9104461Z   ✓   44 [chromium] › tests/e2e/misc/sidebar-resize.spec.ts:113:2 › Sidebar Resize › should not show resize handle on mobile (2.0s)
+e2e	Run e2e tests	2026-11-10T20:02:16.1554889Z   ✓   45 [chromium] › tests/e2e/project/filter-persistence.spec.ts:27:2 › Filter Persistence Across Views › should persist filters in List view after page refresh (2.2s)
+e2e	Run e2e tests	2026-11-10T20:02:18.4311534Z   ✓   46 [chromium] › tests/e2e/project/filter-persistence.spec.ts:37:2 › Filter Persistence Across Views › should persist filters in Table view after page refresh (2.2s)
+e2e	Run e2e tests	2026-11-10T20:02:20.6744699Z   ✓   47 [chromium] › tests/e2e/project/filter-persistence.spec.ts:49:2 › Filter Persistence Across Views › should persist filters in Kanban view after page refresh (2.2s)
+e2e	Run e2e tests	2026-11-10T20:02:23.1137659Z   ✓   48 [chromium] › tests/e2e/project/filter-persistence.spec.ts:61:2 › Filter Persistence Across Views › should only show a task without a due date when include nulls is ticked (2.4s)
+e2e	Run e2e tests	2026-11-10T20:02:25.0650961Z   ✓   49 [chromium] › tests/e2e/project/filter-persistence.spec.ts:100:2 › Filter Persistence Across Views › should handle URL sharing with filters (1.9s)
+e2e	Run e2e tests	2026-11-10T20:02:28.0356032Z   ✓   50 [chromium] › tests/e2e/project/parent-project-clear.spec.ts:6:2 › Parent Project Clear › Should clear the parent project field and persist the change (2.9s)
+e2e	Run e2e tests	2026-11-10T20:02:31.1407420Z   ✓   51 [chromium] › tests/e2e/project/parent-project-clear.spec.ts:64:2 › Parent Project Clear › Should not jump back after selecting and deleting the parent project text (3.0s)
+e2e	Run e2e tests	2026-11-10T20:02:34.8675358Z   ✓   52 [chromium] › tests/e2e/project/project-history.spec.ts:25:2 › Project History › should show a project history on the home page (3.6s)
+e2e	Run e2e tests	2026-11-10T20:02:37.9924565Z   ✓   53 [chromium] › tests/e2e/project/project-history.spec.ts:68:2 › Project History › should hide the last viewed section when showLastViewed setting is disabled (3.0s)
+e2e	Run e2e tests	2026-11-10T20:02:41.9649926Z   ✓   54 [chromium] › tests/e2e/project/project-history.spec.ts:100:2 › Project History › should show the last viewed section again when re-enabling showLastViewed (3.9s)
+e2e	Run e2e tests	2026-11-10T20:02:43.9019594Z   ✓   55 [chromium] › tests/e2e/project/project-sidebar-drag-handle.spec.ts:9:2 › Project sidebar drag handle › does not overlap the project color on a touch capable desktop (1.9s)
+e2e	Run e2e tests	2026-11-10T20:02:47.1177037Z   ✓   56 [chromium] › tests/e2e/project/project-view-gantt.spec.ts:9:2 › Project View Gantt › Shows the correct start of the week in the date picker (3.2s)
+e2e	Run e2e tests	2026-11-10T20:02:48.7510622Z   ✓   57 [chromium] › tests/e2e/project/project-view-gantt.spec.ts:35:2 › Project View Gantt › Hides tasks with no dates (1.6s)
+e2e	Run e2e tests	2026-11-10T20:02:50.4842177Z   ✓   58 [chromium] › tests/e2e/project/project-view-gantt.spec.ts:44:2 › Project View Gantt › Shows tasks from the current and next month (1.7s)
+e2e	Run e2e tests	2026-11-10T20:02:52.1647213Z   ✓   59 [chromium] › tests/e2e/project/project-view-gantt.spec.ts:60:2 › Project View Gantt › Shows tasks with dates (1.6s)
+e2e	Run e2e tests	2026-11-10T20:02:53.9328662Z   ✓   60 [chromium] › tests/e2e/project/project-view-gantt.spec.ts:74:2 › Project View Gantt › Shows tasks with no dates after enabling them (1.7s)
+e2e	Run e2e tests	2026-11-10T20:02:55.7807006Z   ✓   61 [chromium] › tests/e2e/project/project-view-gantt.spec.ts:89:2 › Project View Gantt › Drags a task around (1.8s)
+e2e	Run e2e tests	2026-11-10T20:02:57.7871255Z   ✓   62 [chromium] › tests/e2e/project/project-view-gantt.spec.ts:121:2 › Project View Gantt › Should change the query parameters when selecting a date range (1.9s)
+e2e	Run e2e tests	2026-11-10T20:02:59.4436839Z   ✓   63 [chromium] › tests/e2e/project/project-view-gantt.spec.ts:137:2 › Project View Gantt › Should change the date range based on date query parameters (1.6s)
+e2e	Run e2e tests	2026-11-10T20:03:01.5895171Z   ✓   64 [chromium] › tests/e2e/project/project-view-gantt.spec.ts:148:2 › Project View Gantt › Should open a task when double clicked on it (2.1s)
+e2e	Run e2e tests	2026-11-10T20:03:03.8376644Z   ✓   65 [chromium] › tests/e2e/project/project-view-gantt.spec.ts:163:2 › Project View Gantt › Should preserve date range query parameters after opening and closing a task modal (2.2s)
+e2e	Run e2e tests	2026-11-10T20:03:07.6615531Z   ✓   66 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:69:2 › Project View Kanban › Loads card covers only once they scroll into view (3.7s)
+e2e	Run e2e tests	2026-11-10T20:03:09.3421032Z   ✓   67 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:121:2 › Project View Kanban › Shows all buckets with their tasks (1.6s)
+e2e	Run e2e tests	2026-11-10T20:03:11.1267783Z   ✓   68 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:130:2 › Project View Kanban › Can add a new task to a bucket (1.7s)
+e2e	Run e2e tests	2026-11-10T20:03:12.8818626Z   ✓   69 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:141:2 › Project View Kanban › Can create a new bucket (1.7s)
+e2e	Run e2e tests	2026-11-10T20:03:14.7506266Z   ✓   70 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:151:2 › Project View Kanban › Can set a bucket limit (1.8s)
+e2e	Run e2e tests	2026-11-10T20:03:16.4778922Z   ✓   71 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:166:2 › Project View Kanban › Can rename a bucket (1.7s)
+e2e	Run e2e tests	2026-11-10T20:03:18.4217324Z   ✓   72 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:176:2 › Project View Kanban › Can delete a bucket (1.9s)
+e2e	Run e2e tests	2026-11-10T20:03:20.6243444Z   ✓   73 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:188:2 › Project View Kanban › Can drag tasks around (2.1s)
+e2e	Run e2e tests	2026-11-10T20:03:32.2909431Z   ✘   74 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:202:2 › Project View Kanban › Scrolls the board while dragging a task to a bucket off screen (11.6s)
+e2e	Run e2e tests	2026-11-10T20:03:32.9442847Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T20:03:44.7932819Z   ✘   75 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:202:2 › Project View Kanban › Scrolls the board while dragging a task to a bucket off screen (retry #1) (11.7s)
+e2e	Run e2e tests	2026-11-10T20:03:45.3039755Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T20:03:57.0913859Z   ✘   76 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:202:2 › Project View Kanban › Scrolls the board while dragging a task to a bucket off screen (retry #2) (11.7s)
+e2e	Run e2e tests	2026-11-10T20:03:57.5899818Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T20:03:59.6051904Z   ✓   77 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:237:2 › Project View Kanban › Recurring task dropped on done bucket moves back to the default bucket (1.9s)
+e2e	Run e2e tests	2026-11-10T20:04:01.7827303Z   ✓   78 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:280:2 › Project View Kanban › Should navigate to the task when the task card is clicked (2.1s)
+e2e	Run e2e tests	2026-11-10T20:04:04.5453489Z   ✓   79 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:290:2 › Project View Kanban › Should mark a task done when ctrl-clicking its card (2.7s)
+e2e	Run e2e tests	2026-11-10T20:04:07.5068808Z   ✓   80 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:314:2 › Project View Kanban › Marks a task done and moves its card into the done bucket (2.9s)
+e2e	Run e2e tests	2026-11-10T20:04:10.3331277Z   ✓   81 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:373:2 › Project View Kanban › Should remove a task from the kanban board when moving it to another project (2.7s)
+e2e	Run e2e tests	2026-11-10T20:04:11.9554903Z   ✓   82 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:412:2 › Project View Kanban › Shows a button to filter the kanban board (1.6s)
+e2e	Run e2e tests	2026-11-10T20:04:14.4052863Z   ✓   83 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:418:2 › Project View Kanban › Should remove a task from the board when deleting it (2.3s)
+e2e	Run e2e tests	2026-11-10T20:04:16.0559212Z   ✓   84 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:438:2 › Project View Kanban › Should show a task description icon if the task has a description (1.6s)
+e2e	Run e2e tests	2026-11-10T20:04:17.6751600Z   ✓   85 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:452:2 › Project View Kanban › Should not show a task description icon if the task has an empty description (1.6s)
+e2e	Run e2e tests	2026-11-10T20:04:19.3540665Z   ✓   86 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:466:2 › Project View Kanban › Should not show a task description icon if the task has a description containing only an empty p tag (1.6s)
+e2e	Run e2e tests	2026-11-10T20:04:21.0682802Z   ✓   87 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:480:2 › Project View Kanban › Should respect filter query parameter from URL (1.7s)
+e2e	Run e2e tests	2026-11-10T20:04:22.7664450Z   ✓   88 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:508:2 › Project View Kanban › Should respect search query parameter from URL (1.7s)
+e2e	Run e2e tests	2026-11-10T20:04:24.3962365Z   ✓   89 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:533:2 › Project View Kanban › Should not show task count by default when bucket has no limit (1.6s)
+e2e	Run e2e tests	2026-11-10T20:04:27.0054420Z   ✓   90 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:544:2 › Project View Kanban › Should show task count when alwaysShowBucketTaskCount setting is enabled (2.6s)
+e2e	Run e2e tests	2026-11-10T20:04:28.9546262Z   ✓   91 [chromium] › tests/e2e/project/project-view-kanban.spec.ts:568:2 › Project View Kanban › Should show count/limit format when bucket has a limit set (1.9s)
+e2e	Run e2e tests	2026-11-10T20:04:30.6425818Z   ✓   92 [chromium] › tests/e2e/project/project-view-list.spec.ts:12:2 › Project View List › Should be an empty project (1.6s)
+e2e	Run e2e tests	2026-11-10T20:04:32.5406820Z   ✓   93 [chromium] › tests/e2e/project/project-view-list.spec.ts:21:2 › Project View List › Should create a new task (1.8s)
+e2e	Run e2e tests	2026-11-10T20:04:34.6416853Z   ✓   94 [chromium] › tests/e2e/project/project-view-list.spec.ts:35:2 › Project View List › Should create multiple tasks from multiline input and keep their order (2.0s)
+e2e	Run e2e tests	2026-11-10T20:04:36.7163076Z   ✓   95 [chromium] › tests/e2e/project/project-view-list.spec.ts:55:2 › Project View List › Should create subtasks from indented multiline input (2.0s)
+e2e	Run e2e tests	2026-11-10T20:04:38.7738636Z   ✓   96 [chromium] › tests/e2e/project/project-view-list.spec.ts:74:2 › Project View List › Should navigate to the task when the title is clicked (2.0s)
+e2e	Run e2e tests	2026-11-10T20:04:40.3580506Z   ✓   97 [chromium] › tests/e2e/project/project-view-list.spec.ts:87:2 › Project View List › Should not see any elements for a project which is shared read only (1.5s)
+e2e	Run e2e tests	2026-11-10T20:04:42.0409885Z   ✓   98 [chromium] › tests/e2e/project/project-view-list.spec.ts:103:2 › Project View List › Should only show the color of a project in the navigation and not in the list view (1.6s)
+e2e	Run e2e tests	2026-11-10T20:04:44.1471548Z   ✓   99 [chromium] › tests/e2e/project/project-view-list.spec.ts:117:2 › Project View List › Should paginate for > 50 tasks (2.0s)
+e2e	Run e2e tests	2026-11-10T20:04:46.0780362Z   ✓  100 [chromium] › tests/e2e/project/project-view-list.spec.ts:136:2 › Project View List › Should not navigate to a negative page when clicking previous on the first page (1.9s)
+e2e	Run e2e tests	2026-11-10T20:04:47.7939168Z   ✓  101 [chromium] › tests/e2e/project/project-view-list.spec.ts:156:2 › Project View List › Should show cross-project subtasks in their own project List view (1.7s)
+e2e	Run e2e tests	2026-11-10T20:04:49.5413441Z   ✓  102 [chromium] › tests/e2e/project/project-view-list.spec.ts:189:2 › Project View List › Should show same-project subtasks under their parent (1.7s)
+e2e	Run e2e tests	2026-11-10T20:04:51.3199188Z   ✓  103 [chromium] › tests/e2e/project/project-view-list.spec.ts:226:2 › Project View List › Should respect filter query parameter from URL (1.7s)
+e2e	Run e2e tests	2026-11-10T20:04:53.0321672Z   ✓  104 [chromium] › tests/e2e/project/project-view-list.spec.ts:243:2 › Project View List › Should respect search query parameter from URL (1.7s)
+e2e	Run e2e tests	2026-11-10T20:05:00.0544798Z   ✘  105 [chromium] › tests/e2e/project/project-view-list.spec.ts:258:2 › Project View List › Should search for a term entered in the filter input (6.9s)
+e2e	Run e2e tests	2026-11-10T20:05:00.6358075Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T20:05:07.8970519Z   ✘  106 [chromium] › tests/e2e/project/project-view-list.spec.ts:258:2 › Project View List › Should search for a term entered in the filter input (retry #1) (7.1s)
+e2e	Run e2e tests	2026-11-10T20:05:08.3970196Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T20:05:15.6302991Z   ✘  107 [chromium] › tests/e2e/project/project-view-list.spec.ts:258:2 › Project View List › Should search for a term entered in the filter input (retry #2) (7.0s)
+e2e	Run e2e tests	2026-11-10T20:05:16.1280822Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T20:05:17.9764897Z   ✓  108 [chromium] › tests/e2e/project/project-view-table.spec.ts:7:2 › Project View Table › Should show a table with tasks (1.7s)
+e2e	Run e2e tests	2026-11-10T20:05:19.8576980Z   ✓  109 [chromium] › tests/e2e/project/project-view-table.spec.ts:18:2 › Project View Table › Should have working column switches (1.8s)
+e2e	Run e2e tests	2026-11-10T20:05:21.9845560Z   ✓  110 [chromium] › tests/e2e/project/project-view-table.spec.ts:50:2 › Project View Table › Should show every priority for open and completed tasks (2.0s)
+e2e	Run e2e tests	2026-11-10T20:05:24.1271201Z   ✓  111 [chromium] › tests/e2e/project/project-view-table.spec.ts:73:2 › Project View Table › Should navigate to the task when the title is clicked (2.0s)
+e2e	Run e2e tests	2026-11-10T20:05:25.8167430Z   ✓  112 [chromium] › tests/e2e/project/project-view-table.spec.ts:90:2 › Project View Table › Should respect filter query parameter from URL (1.6s)
+e2e	Run e2e tests	2026-11-10T20:05:27.4508055Z   ✓  113 [chromium] › tests/e2e/project/project-view-table.spec.ts:107:2 › Project View Table › Should respect search query parameter from URL (1.6s)
+e2e	Run e2e tests	2026-11-10T20:05:29.8325591Z   ✓  114 [chromium] › tests/e2e/project/project.spec.ts:18:2 › Projects › Should create a new project (2.3s)
+e2e	Run e2e tests	2026-11-10T20:05:31.6890816Z   ✓  115 [chromium] › tests/e2e/project/project.spec.ts:32:2 › Projects › Should redirect to a specific project view after visited (1.8s)
+e2e	Run e2e tests	2026-11-10T20:05:34.6232672Z   ✓  116 [chromium] › tests/e2e/project/project.spec.ts:49:2 › Projects › Should rename the project in all places (2.8s)
+e2e	Run e2e tests	2026-11-10T20:05:37.1019726Z   ✓  117 [chromium] › tests/e2e/project/project.spec.ts:81:2 › Projects › Should remove a project when deleting it (2.4s)
+e2e	Run e2e tests	2026-11-10T20:05:39.0829439Z   ✓  118 [chromium] › tests/e2e/project/project.spec.ts:100:2 › Projects › Should close a directly opened edit dialog on cancel (1.9s)
+e2e	Run e2e tests	2026-11-10T20:05:41.1320598Z   ✓  119 [chromium] › tests/e2e/project/project.spec.ts:111:2 › Projects › Should close a directly opened edit dialog after saving (2.0s)
+e2e	Run e2e tests	2026-11-10T20:05:43.7689400Z   ✓  120 [chromium] › tests/e2e/project/project.spec.ts:124:2 › Projects › Should keep the project when cancelling a directly opened delete dialog (2.6s)
+e2e	Run e2e tests	2026-11-10T20:05:46.1492578Z   ✓  121 [chromium] › tests/e2e/project/project.spec.ts:139:2 › Projects › Should archive a project (2.3s)
+e2e	Run e2e tests	2026-11-10T20:05:49.6766934Z   ✓  122 [chromium] › tests/e2e/project/project.spec.ts:154:2 › Projects › Should upload and remove a project background without stale previews (3.4s)
+e2e	Run e2e tests	2026-11-10T20:05:51.7651260Z   ✓  123 [chromium] › tests/e2e/project/project.spec.ts:207:2 › Projects › Should show all projects on the projects page (2.0s)
+e2e	Run e2e tests	2026-11-10T20:05:54.6762985Z   ✓  124 [chromium] › tests/e2e/project/project.spec.ts:218:2 › Projects › Should not show archived projects if the filter is not checked (2.8s)
+e2e	Run e2e tests	2026-11-10T20:05:56.8848132Z   ✓  125 [chromium] › tests/e2e/project/saved-filter-favorite.spec.ts:6:2 › Saved Filter Favorites › Can mark a saved filter as favorite (2.1s)
+e2e	Run e2e tests	2026-11-10T20:05:59.0349243Z   ✓  126 [chromium] › tests/e2e/project/saved-filter-favorite.spec.ts:41:2 › Saved Filter Favorites › Can remove a saved filter from favorites (2.1s)
+e2e	Run e2e tests	2026-11-10T20:06:02.4461354Z   ✓  127 [chromium] › tests/e2e/project/saved-filter-favorite.spec.ts:77:2 › Saved Filter Favorites › Saved filter favorite status persists after page reload (3.3s)
+e2e	Run e2e tests	2026-11-10T20:06:04.6435756Z   ✓  128 [chromium] › tests/e2e/project/saved-filter-settings.spec.ts:24:2 › Saved Filter Settings › Can edit the title of a saved filter (2.1s)
+e2e	Run e2e tests	2026-11-10T20:06:06.5056255Z   ✓  129 [chromium] › tests/e2e/project/saved-filter-settings.spec.ts:43:2 › Saved Filter Settings › Can delete a saved filter (1.8s)
+e2e	Run e2e tests	2026-11-10T20:06:08.3031922Z   ✓  130 [chromium] › tests/e2e/project/saved-filter-settings.spec.ts:56:2 › Saved Filter Settings › Opens the filter edit modal when loading its URL directly (1.8s)
+e2e	Run e2e tests	2026-11-10T20:06:09.8420712Z   ✓  131 [chromium] › tests/e2e/project/saved-filter-settings.spec.ts:64:2 › Saved Filter Settings › Opens the filter delete modal when loading its URL directly (1.5s)
+e2e	Run e2e tests	2026-11-10T20:06:12.3808043Z   ✓  132 [chromium] › tests/e2e/project/saved-filter-subtasks.spec.ts:55:2 › Saved filter subtasks › shows a non-matching subtask nested only, not as its own top level row (2.5s)
+e2e	Run e2e tests	2026-11-10T20:06:14.9942991Z   ✓  133 [chromium] › tests/e2e/project/saved-filter-subtasks.spec.ts:66:2 › Saved filter subtasks › shows a matching subtask when its parent does not match the filter (2.6s)
+e2e	Run e2e tests	2026-11-10T20:06:17.4069617Z   ✓  134 [chromium] › tests/e2e/project/sort-persistence.spec.ts:19:2 › Sort persistence across sidebar navigation (#2753) › List view: sort persists after navigating to another project and back (2.3s)
+e2e	Run e2e tests	2026-11-10T20:06:19.1861476Z   ✓  135 [chromium] › tests/e2e/project/sort-persistence.spec.ts:63:2 › Sort persistence across sidebar navigation (#2753) › List view: explicit URL sort wins over stored sort (1.7s)
+e2e	Run e2e tests	2026-11-10T20:06:22.6559868Z   ✓  136 [chromium] › tests/e2e/project/task-cache-pseudo-boards.spec.ts:10:2 › persists favorites task edits in its board response (3.4s)
+e2e	Run e2e tests	2026-11-10T20:06:26.1170437Z   ✓  137 [chromium] › tests/e2e/project/task-cache-pseudo-boards.spec.ts:10:2 › persists saved filter task edits in its board response (3.4s)
+e2e	Run e2e tests	2026-11-10T20:06:30.9969457Z   ✓  138 [chromium] › tests/e2e/project/task-cache-pseudo-boards.spec.ts:49:1 › moving a favourite task to another project keeps it in Favorites and drops it from the source board (4.7s)
+e2e	Run e2e tests	2026-11-10T20:06:33.1124849Z   ✓  139 [chromium] › tests/e2e/project/webhooks.spec.ts:11:2 › Project webhooks › validates the target URL (2.0s)
+e2e	Run e2e tests	2026-11-10T20:06:35.2701021Z   ✓  140 [chromium] › tests/e2e/project/webhooks.spec.ts:19:2 › Project webhooks › requires at least one event (2.1s)
+e2e	Run e2e tests	2026-11-10T20:06:38.1104164Z   ✓  141 [chromium] › tests/e2e/project/webhooks.spec.ts:27:2 › Project webhooks › creates and deletes a webhook (2.7s)
+e2e	Run e2e tests	2026-11-10T20:06:40.1460770Z   ✓  142 [chromium] › tests/e2e/project/webhooks.spec.ts:58:2 › Project webhooks › does not overflow the table with a long target URL (2.0s)
+e2e	Run e2e tests	2026-11-10T20:06:42.9698357Z   ✓  143 [chromium] › tests/e2e/project/webhooks.spec.ts:78:2 › Project webhooks › pages the list and deletes a webhook on a later page (2.7s)
+e2e	Run e2e tests	2026-11-10T20:06:48.0116261Z   ✓  144 [chromium] › tests/e2e/task/comment-crud.spec.ts:9:1 › comment create, edit and delete persist after reload (4.9s)
+e2e	Run e2e tests	2026-11-10T20:06:55.4897357Z   ✘  145 [chromium] › tests/e2e/task/comment-crud.spec.ts:42:1 › comments by another user can be replied to but not edited (7.4s)
+e2e	Run e2e tests	2026-11-10T20:06:56.1457615Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T20:07:03.6472595Z   ✘  146 [chromium] › tests/e2e/task/comment-crud.spec.ts:42:1 › comments by another user can be replied to but not edited (retry #1) (7.4s)
+e2e	Run e2e tests	2026-11-10T20:07:04.1458001Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T20:07:11.6408742Z   ✘  147 [chromium] › tests/e2e/task/comment-crud.spec.ts:42:1 › comments by another user can be replied to but not edited (retry #2) (7.3s)
+e2e	Run e2e tests	2026-11-10T20:07:12.1611999Z Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+e2e	Run e2e tests	2026-11-10T20:07:16.7533817Z   ✓  148 [chromium] › tests/e2e/task/comment-pagination.spec.ts:14:2 › Task comment pagination › shows pagination when more comments than configured page size (4.5s)
+e2e	Run e2e tests	2026-11-10T20:07:20.5048151Z   ✓  149 [chromium] › tests/e2e/task/comment-pagination.spec.ts:23:2 › Task comment pagination › hides pagination when comments equal or fewer than configured page size (3.7s)
+e2e	Run e2e tests	2026-11-10T20:07:23.7039129Z   ✓  150 [chromium] › tests/e2e/task/comment-reply.spec.ts:14:2 › Reply to a task comment › Reply action prefills the editor with a quoted blockquote and the saved reply renders an author header + chevron that jumps to the original (3.1s)
+e2e	Run e2e tests	2026-11-10T20:07:25.9028672Z   ✓  151 [chromium] › tests/e2e/task/comment-sort-order.spec.ts:44:2 › Comment sort order › defaults to oldest first (2.1s)
+e2e	Run e2e tests	2026-11-10T20:07:28.0515131Z   ✓  152 [chromium] › tests/e2e/task/comment-sort-order.spec.ts:60:2 › Comment sort order › toggles to newest first (2.1s)
+e2e	Run e2e tests	2026-11-10T20:07:30.5602249Z   ✓  153 [chromium] › tests/e2e/task/comment-sort-order.spec.ts:78:2 › Comment sort order › new comment appears at the top when newest first (2.4s)
+e2e	Run e2e tests	2026-11-10T20:07:33.5620452Z   ✓  154 [chromium] › tests/e2e/task/comment-sort-order.spec.ts:105:2 › Comment sort order › scrolls to top when adding a comment in newest first mode (2.9s)
+e2e	Run e2e tests	2026-11-10T20:07:39.2204626Z   ✓  155 [chromium] › tests/e2e/task/comment-sort-order.spec.ts:133:2 › Comment sort order › pagination works with sort order (5.5s)
+e2e	Run e2e tests	2026-11-10T20:07:41.4115338Z   ✓  156 [chromium] › tests/e2e/task/comment-sort-order.spec.ts:158:2 › Comment sort order › works with initial load (fewer comments than page size) (2.1s)
+e2e	Run e2e tests	2026-11-10T20:07:44.2200610Z   ✓  157 [chromium] › tests/e2e/task/comment-sort-order.spec.ts:177:2 › Comment sort order › persists sort order setting (2.7s)
+e2e	Run e2e tests	2026-11-10T20:07:47.3090699Z   ✓  158 [chromium] › tests/e2e/task/comment-sort-order.spec.ts:199:2 › Comment sort order › uses saved setting on page load (3.0s)
+e2e	Run e2e tests	2026-11-10T20:07:47.7401399Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7406183Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7416806Z   1) [chromium] › tests/e2e/editor/copy-as-text.spec.ts:10:2 › Editor copy as plain text › keeps the list markers of a copied bullet list 
+e2e	Run e2e tests	2026-11-10T20:07:47.7417513Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7417847Z     Error: expect(received).toContain(expected) // indexOf
+e2e	Run e2e tests	2026-11-10T20:07:47.7418158Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7418359Z     Expected substring: "- this
+e2e	Run e2e tests	2026-11-10T20:07:47.7418688Z     - is
+e2e	Run e2e tests	2026-11-10T20:07:47.7418938Z     - a
+e2e	Run e2e tests	2026-11-10T20:07:47.7419189Z     - list"
+e2e	Run e2e tests	2026-11-10T20:07:47.7421794Z     Received string:    "start·····
+e2e	Run e2e tests	2026-11-10T20:07:47.7422351Z     this···
+e2e	Run e2e tests	2026-11-10T20:07:47.7422653Z     is···
+e2e	Run e2e tests	2026-11-10T20:07:47.7422957Z     a···
+e2e	Run e2e tests	2026-11-10T20:07:47.7423211Z     list·
+e2e	Run e2e tests	2026-11-10T20:07:47.7423451Z     end"
+e2e	Run e2e tests	2026-11-10T20:07:47.7423588Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7423711Z     Call Log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7424188Z     - Timeout 5000ms exceeded while waiting on the predicate
+e2e	Run e2e tests	2026-11-10T20:07:47.7424505Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7424836Z       27 | 		await page.keyboard.press('ControlOrMeta+c')
+e2e	Run e2e tests	2026-11-10T20:07:47.7425239Z       28 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7426123Z     > 29 | 		await expect.poll(() => page.evaluate(() => navigator.clipboard.readText())).toContain('- this\n- is\n- a\n- list')
+e2e	Run e2e tests	2026-11-10T20:07:47.7427166Z          | 		                                                                             ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7427593Z       30 | 	})
+e2e	Run e2e tests	2026-11-10T20:07:47.7427869Z       31 | })
+e2e	Run e2e tests	2026-11-10T20:07:47.7428121Z       32 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7428905Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/editor/copy-as-text.spec.ts:29:80
+e2e	Run e2e tests	2026-11-10T20:07:47.7429866Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7430724Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7431842Z     test-results/editor-copy-as-text-Editor-b2447-ers-of-a-copied-bullet-list-chromium/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7433061Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7433432Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7434095Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7435140Z     test-results/editor-copy-as-text-Editor-b2447-ers-of-a-copied-bullet-list-chromium/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7436302Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7436677Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7437450Z     Error Context: test-results/editor-copy-as-text-Editor-b2447-ers-of-a-copied-bullet-list-chromium/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7438141Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7438825Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7439850Z     test-results/editor-copy-as-text-Editor-b2447-ers-of-a-copied-bullet-list-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7440701Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7440846Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7441954Z         pnpm exec playwright show-trace test-results/editor-copy-as-text-Editor-b2447-ers-of-a-copied-bullet-list-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7442639Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7443254Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7443617Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7444217Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7444574Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7444889Z     Error: expect(received).toContain(expected) // indexOf
+e2e	Run e2e tests	2026-11-10T20:07:47.7445224Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7445429Z     Expected substring: "- this
+e2e	Run e2e tests	2026-11-10T20:07:47.7445722Z     - is
+e2e	Run e2e tests	2026-11-10T20:07:47.7445957Z     - a
+e2e	Run e2e tests	2026-11-10T20:07:47.7446211Z     - list"
+e2e	Run e2e tests	2026-11-10T20:07:47.7446613Z     Received string:    "start·····
+e2e	Run e2e tests	2026-11-10T20:07:47.7446979Z     this···
+e2e	Run e2e tests	2026-11-10T20:07:47.7447248Z     is···
+e2e	Run e2e tests	2026-11-10T20:07:47.7447511Z     a···
+e2e	Run e2e tests	2026-11-10T20:07:47.7447763Z     list·
+e2e	Run e2e tests	2026-11-10T20:07:47.7448000Z     end"
+e2e	Run e2e tests	2026-11-10T20:07:47.7448158Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7448284Z     Call Log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7448734Z     - Timeout 5000ms exceeded while waiting on the predicate
+e2e	Run e2e tests	2026-11-10T20:07:47.7449028Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7449347Z       27 | 		await page.keyboard.press('ControlOrMeta+c')
+e2e	Run e2e tests	2026-11-10T20:07:47.7449734Z       28 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7450729Z     > 29 | 		await expect.poll(() => page.evaluate(() => navigator.clipboard.readText())).toContain('- this\n- is\n- a\n- list')
+e2e	Run e2e tests	2026-11-10T20:07:47.7451758Z          | 		                                                                             ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7452543Z       30 | 	})
+e2e	Run e2e tests	2026-11-10T20:07:47.7452799Z       31 | })
+e2e	Run e2e tests	2026-11-10T20:07:47.7453040Z       32 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7453778Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/editor/copy-as-text.spec.ts:29:80
+e2e	Run e2e tests	2026-11-10T20:07:47.7454225Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7454896Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7456000Z     test-results/editor-copy-as-text-Editor-b2447-ers-of-a-copied-bullet-list-chromium-retry1/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7457155Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7457513Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7458135Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7459146Z     test-results/editor-copy-as-text-Editor-b2447-ers-of-a-copied-bullet-list-chromium-retry1/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7460461Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7460815Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7461598Z     Error Context: test-results/editor-copy-as-text-Editor-b2447-ers-of-a-copied-bullet-list-chromium-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7462258Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7462906Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7463953Z     test-results/editor-copy-as-text-Editor-b2447-ers-of-a-copied-bullet-list-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7464615Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7464752Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7465746Z         pnpm exec playwright show-trace test-results/editor-copy-as-text-Editor-b2447-ers-of-a-copied-bullet-list-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7466441Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7467035Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7467382Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7468010Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7468371Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7468670Z     Error: expect(received).toContain(expected) // indexOf
+e2e	Run e2e tests	2026-11-10T20:07:47.7468968Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7469165Z     Expected substring: "- this
+e2e	Run e2e tests	2026-11-10T20:07:47.7469496Z     - is
+e2e	Run e2e tests	2026-11-10T20:07:47.7469733Z     - a
+e2e	Run e2e tests	2026-11-10T20:07:47.7469982Z     - list"
+e2e	Run e2e tests	2026-11-10T20:07:47.7470543Z     Received string:    "start·····
+e2e	Run e2e tests	2026-11-10T20:07:47.7470900Z     this···
+e2e	Run e2e tests	2026-11-10T20:07:47.7471167Z     is···
+e2e	Run e2e tests	2026-11-10T20:07:47.7471437Z     a···
+e2e	Run e2e tests	2026-11-10T20:07:47.7471692Z     list·
+e2e	Run e2e tests	2026-11-10T20:07:47.7471936Z     end"
+e2e	Run e2e tests	2026-11-10T20:07:47.7472066Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7472195Z     Call Log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7472655Z     - Timeout 5000ms exceeded while waiting on the predicate
+e2e	Run e2e tests	2026-11-10T20:07:47.7472974Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7473306Z       27 | 		await page.keyboard.press('ControlOrMeta+c')
+e2e	Run e2e tests	2026-11-10T20:07:47.7473718Z       28 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7475006Z     > 29 | 		await expect.poll(() => page.evaluate(() => navigator.clipboard.readText())).toContain('- this\n- is\n- a\n- list')
+e2e	Run e2e tests	2026-11-10T20:07:47.7476041Z          | 		                                                                             ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7476466Z       30 | 	})
+e2e	Run e2e tests	2026-11-10T20:07:47.7476722Z       31 | })
+e2e	Run e2e tests	2026-11-10T20:07:47.7476989Z       32 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7477776Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/editor/copy-as-text.spec.ts:29:80
+e2e	Run e2e tests	2026-11-10T20:07:47.7478243Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7478952Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7480320Z     test-results/editor-copy-as-text-Editor-b2447-ers-of-a-copied-bullet-list-chromium-retry2/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7482103Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7482476Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7483117Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7484241Z     test-results/editor-copy-as-text-Editor-b2447-ers-of-a-copied-bullet-list-chromium-retry2/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7485406Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7485770Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7486622Z     Error Context: test-results/editor-copy-as-text-Editor-b2447-ers-of-a-copied-bullet-list-chromium-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7487301Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7487969Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7489057Z     test-results/editor-copy-as-text-Editor-b2447-ers-of-a-copied-bullet-list-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7489749Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7489889Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7491074Z         pnpm exec playwright show-trace test-results/editor-copy-as-text-Editor-b2447-ers-of-a-copied-bullet-list-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7491838Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7492438Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7492791Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7493530Z   2) [chromium] › tests/e2e/migrate/csv.spec.ts:18:1 › CSV import page highlights the import item in the settings navigation 
+e2e	Run e2e tests	2026-11-10T20:07:47.7494076Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7494367Z     Error: expect(locator).toHaveClass(expected) failed
+e2e	Run e2e tests	2026-11-10T20:07:47.7494639Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7495364Z     Locator: locator('.side-nav-shell .navigation').locator('.navigation-link').filter({ hasText: 'Import from other services' })
+e2e	Run e2e tests	2026-11-10T20:07:47.7496129Z     Expected pattern: /is-active/
+e2e	Run e2e tests	2026-11-10T20:07:47.7496549Z     Received string:  "navigation-link"
+e2e	Run e2e tests	2026-11-10T20:07:47.7496922Z     Timeout: 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7497073Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7497197Z     Call log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7498305Z       - Expect "toHaveClass" locator('.side-nav-shell .navigation').locator('.navigation-link').filter({ hasText: 'Import from other services' }) with timeout 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7500456Z       - waiting for locator('.side-nav-shell .navigation').locator('.navigation-link').filter({ hasText: 'Import from other services' })
+e2e	Run e2e tests	2026-11-10T20:07:47.7502209Z         14 × locator resolved to <a data-v-5bbdcda6="" class="navigation-link" href="/user/settings/migrate">Import from other services</a>
+e2e	Run e2e tests	2026-11-10T20:07:47.7503168Z            - unexpected value "navigation-link"
+e2e	Run e2e tests	2026-11-10T20:07:47.7503425Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7503434Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7503872Z       20 | 	await expect(page.locator('input[type=file]')).toBeAttached()
+e2e	Run e2e tests	2026-11-10T20:07:47.7504650Z       21 | 	const navigation = page.locator('.side-nav-shell .navigation')
+e2e	Run e2e tests	2026-11-10T20:07:47.7505818Z     > 22 | 	await expect(navigation.locator('.navigation-link').filter({hasText: 'Import from other services'})).toHaveClass(/is-active/)
+e2e	Run e2e tests	2026-11-10T20:07:47.7507048Z          | 	                                                                                                     ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7507946Z       23 | 	await expect(navigation.locator('.navigation-link.is-active')).toHaveCount(1)
+e2e	Run e2e tests	2026-11-10T20:07:47.7508489Z       24 | })
+e2e	Run e2e tests	2026-11-10T20:07:47.7508749Z       25 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7509497Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/migrate/csv.spec.ts:22:103
+e2e	Run e2e tests	2026-11-10T20:07:47.7509922Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7510722Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7511848Z     test-results/migrate-csv-CSV-import-pag-575c0--in-the-settings-navigation-chromium/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7513040Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7513414Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7514051Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7514931Z     test-results/migrate-csv-CSV-import-pag-575c0--in-the-settings-navigation-chromium/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7515744Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7515969Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7516502Z     Error Context: test-results/migrate-csv-CSV-import-pag-575c0--in-the-settings-navigation-chromium/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7517110Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7517780Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7518806Z     test-results/migrate-csv-CSV-import-pag-575c0--in-the-settings-navigation-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7519447Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7519600Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7520611Z         pnpm exec playwright show-trace test-results/migrate-csv-CSV-import-pag-575c0--in-the-settings-navigation-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7521327Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7521993Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7522711Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7523329Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7523700Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7524004Z     Error: expect(locator).toHaveClass(expected) failed
+e2e	Run e2e tests	2026-11-10T20:07:47.7524299Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7525043Z     Locator: locator('.side-nav-shell .navigation').locator('.navigation-link').filter({ hasText: 'Import from other services' })
+e2e	Run e2e tests	2026-11-10T20:07:47.7525811Z     Expected pattern: /is-active/
+e2e	Run e2e tests	2026-11-10T20:07:47.7526241Z     Received string:  "navigation-link"
+e2e	Run e2e tests	2026-11-10T20:07:47.7526606Z     Timeout: 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7526776Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7526895Z     Call log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7528065Z       - Expect "toHaveClass" locator('.side-nav-shell .navigation').locator('.navigation-link').filter({ hasText: 'Import from other services' }) with timeout 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7529306Z       - waiting for locator('.side-nav-shell .navigation').locator('.navigation-link').filter({ hasText: 'Import from other services' })
+e2e	Run e2e tests	2026-11-10T20:07:47.7530762Z         14 × locator resolved to <a data-v-5bbdcda6="" class="navigation-link" href="/user/settings/migrate">Import from other services</a>
+e2e	Run e2e tests	2026-11-10T20:07:47.7531398Z            - unexpected value "navigation-link"
+e2e	Run e2e tests	2026-11-10T20:07:47.7531661Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7531671Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7532174Z       20 | 	await expect(page.locator('input[type=file]')).toBeAttached()
+e2e	Run e2e tests	2026-11-10T20:07:47.7532935Z       21 | 	const navigation = page.locator('.side-nav-shell .navigation')
+e2e	Run e2e tests	2026-11-10T20:07:47.7533945Z     > 22 | 	await expect(navigation.locator('.navigation-link').filter({hasText: 'Import from other services'})).toHaveClass(/is-active/)
+e2e	Run e2e tests	2026-11-10T20:07:47.7535035Z          | 	                                                                                                     ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7535831Z       23 | 	await expect(navigation.locator('.navigation-link.is-active')).toHaveCount(1)
+e2e	Run e2e tests	2026-11-10T20:07:47.7536354Z       24 | })
+e2e	Run e2e tests	2026-11-10T20:07:47.7536597Z       25 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7537277Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/migrate/csv.spec.ts:22:103
+e2e	Run e2e tests	2026-11-10T20:07:47.7537678Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7538295Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7539357Z     test-results/migrate-csv-CSV-import-pag-575c0--in-the-settings-navigation-chromium-retry1/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7540601Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7540940Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7541502Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7542512Z     test-results/migrate-csv-CSV-import-pag-575c0--in-the-settings-navigation-chromium-retry1/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7543702Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7544048Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7544782Z     Error Context: test-results/migrate-csv-CSV-import-pag-575c0--in-the-settings-navigation-chromium-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7545382Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7545958Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7546976Z     test-results/migrate-csv-CSV-import-pag-575c0--in-the-settings-navigation-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7547598Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7547727Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7548685Z         pnpm exec playwright show-trace test-results/migrate-csv-CSV-import-pag-575c0--in-the-settings-navigation-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7549404Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7549897Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7550398Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7550955Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7551652Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7551913Z     Error: expect(locator).toHaveClass(expected) failed
+e2e	Run e2e tests	2026-11-10T20:07:47.7552162Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7552814Z     Locator: locator('.side-nav-shell .navigation').locator('.navigation-link').filter({ hasText: 'Import from other services' })
+e2e	Run e2e tests	2026-11-10T20:07:47.7553528Z     Expected pattern: /is-active/
+e2e	Run e2e tests	2026-11-10T20:07:47.7553925Z     Received string:  "navigation-link"
+e2e	Run e2e tests	2026-11-10T20:07:47.7554209Z     Timeout: 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7554311Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7554401Z     Call log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7555106Z       - Expect "toHaveClass" locator('.side-nav-shell .navigation').locator('.navigation-link').filter({ hasText: 'Import from other services' }) with timeout 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7556159Z       - waiting for locator('.side-nav-shell .navigation').locator('.navigation-link').filter({ hasText: 'Import from other services' })
+e2e	Run e2e tests	2026-11-10T20:07:47.7557323Z         14 × locator resolved to <a data-v-5bbdcda6="" class="navigation-link" href="/user/settings/migrate">Import from other services</a>
+e2e	Run e2e tests	2026-11-10T20:07:47.7557885Z            - unexpected value "navigation-link"
+e2e	Run e2e tests	2026-11-10T20:07:47.7558052Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7558057Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7558306Z       20 | 	await expect(page.locator('input[type=file]')).toBeAttached()
+e2e	Run e2e tests	2026-11-10T20:07:47.7558776Z       21 | 	const navigation = page.locator('.side-nav-shell .navigation')
+e2e	Run e2e tests	2026-11-10T20:07:47.7559432Z     > 22 | 	await expect(navigation.locator('.navigation-link').filter({hasText: 'Import from other services'})).toHaveClass(/is-active/)
+e2e	Run e2e tests	2026-11-10T20:07:47.7560308Z          | 	                                                                                                     ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7560858Z       23 | 	await expect(navigation.locator('.navigation-link.is-active')).toHaveCount(1)
+e2e	Run e2e tests	2026-11-10T20:07:47.7561197Z       24 | })
+e2e	Run e2e tests	2026-11-10T20:07:47.7561372Z       25 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7561824Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/migrate/csv.spec.ts:22:103
+e2e	Run e2e tests	2026-11-10T20:07:47.7562080Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7562475Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7563177Z     test-results/migrate-csv-CSV-import-pag-575c0--in-the-settings-navigation-chromium-retry2/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7563899Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7564118Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7564491Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7565120Z     test-results/migrate-csv-CSV-import-pag-575c0--in-the-settings-navigation-chromium-retry2/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7565786Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7566001Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7566472Z     Error Context: test-results/migrate-csv-CSV-import-pag-575c0--in-the-settings-navigation-chromium-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7567184Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7567579Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7568214Z     test-results/migrate-csv-CSV-import-pag-575c0--in-the-settings-navigation-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7568636Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7568727Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7569336Z         pnpm exec playwright show-trace test-results/migrate-csv-CSV-import-pag-575c0--in-the-settings-navigation-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7569750Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7570257Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7570485Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7570966Z   3) [chromium] › tests/e2e/misc/quick-actions.spec.ts:7:2 › Quick actions › Creates a new task named like an existing project 
+e2e	Run e2e tests	2026-11-10T20:07:47.7571345Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7571548Z     Error: expect(locator).toContainText(expected) failed
+e2e	Run e2e tests	2026-11-10T20:07:47.7571726Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7571884Z     Locator: locator('.global-notification')
+e2e	Run e2e tests	2026-11-10T20:07:47.7572257Z     Expected substring: "The task was successfully created"
+e2e	Run e2e tests	2026-11-10T20:07:47.7572542Z     Received string:    ""
+e2e	Run e2e tests	2026-11-10T20:07:47.7572754Z     Timeout: 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7572858Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7572942Z     Call log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7573330Z       - Expect "toContainText" locator('.global-notification') with timeout 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7573767Z       - waiting for locator('.global-notification')
+e2e	Run e2e tests	2026-11-10T20:07:47.7586758Z         14 × locator resolved to <div role="status" data-v-5e2f5b9b="" aria-live="polite" class="vue-notification-group global-notification">…</div>
+e2e	Run e2e tests	2026-11-10T20:07:47.7587342Z            - unexpected value ""
+e2e	Run e2e tests	2026-11-10T20:07:47.7587482Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7587488Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7587646Z       27 | 		await input.press('Enter')
+e2e	Run e2e tests	2026-11-10T20:07:47.7587894Z       28 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7588368Z     > 29 | 		await expect(page.locator('.global-notification')).toContainText('The task was successfully created')
+e2e	Run e2e tests	2026-11-10T20:07:47.7588916Z          | 		                                                   ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7589295Z       30 | 		await expect(page).toHaveURL(/\/tasks\/\d+/)
+e2e	Run e2e tests	2026-11-10T20:07:47.7589800Z       31 | 		await expect(page.locator('.task-view h1.title.input')).toContainText('Groceries')
+e2e	Run e2e tests	2026-11-10T20:07:47.7590311Z       32 | 	})
+e2e	Run e2e tests	2026-11-10T20:07:47.7590796Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/misc/quick-actions.spec.ts:29:54
+e2e	Run e2e tests	2026-11-10T20:07:47.7591079Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7591494Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7592150Z     test-results/misc-quick-actions-Quick-a-a937b-ed-like-an-existing-project-chromium/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7592835Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7593353Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7593724Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7594332Z     test-results/misc-quick-actions-Quick-a-a937b-ed-like-an-existing-project-chromium/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7594999Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7595209Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7595659Z     Error Context: test-results/misc-quick-actions-Quick-a-a937b-ed-like-an-existing-project-chromium/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7596038Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7596415Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7597033Z     test-results/misc-quick-actions-Quick-a-a937b-ed-like-an-existing-project-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7597413Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7597502Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7598107Z         pnpm exec playwright show-trace test-results/misc-quick-actions-Quick-a-a937b-ed-like-an-existing-project-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7598505Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7598859Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7599077Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7599429Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7599641Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7599839Z     Error: expect(locator).toContainText(expected) failed
+e2e	Run e2e tests	2026-11-10T20:07:47.7600023Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7600311Z     Locator: locator('.global-notification')
+e2e	Run e2e tests	2026-11-10T20:07:47.7600662Z     Expected substring: "The task was successfully created"
+e2e	Run e2e tests	2026-11-10T20:07:47.7600955Z     Received string:    ""
+e2e	Run e2e tests	2026-11-10T20:07:47.7601160Z     Timeout: 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7601288Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7601374Z     Call log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7601759Z       - Expect "toContainText" locator('.global-notification') with timeout 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7602203Z       - waiting for locator('.global-notification')
+e2e	Run e2e tests	2026-11-10T20:07:47.7603064Z         14 × locator resolved to <div role="status" data-v-5e2f5b9b="" aria-live="polite" class="vue-notification-group global-notification">…</div>
+e2e	Run e2e tests	2026-11-10T20:07:47.7603594Z            - unexpected value ""
+e2e	Run e2e tests	2026-11-10T20:07:47.7603726Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7603740Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7603882Z       27 | 		await input.press('Enter')
+e2e	Run e2e tests	2026-11-10T20:07:47.7604097Z       28 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7604577Z     > 29 | 		await expect(page.locator('.global-notification')).toContainText('The task was successfully created')
+e2e	Run e2e tests	2026-11-10T20:07:47.7605110Z          | 		                                                   ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7605462Z       30 | 		await expect(page).toHaveURL(/\/tasks\/\d+/)
+e2e	Run e2e tests	2026-11-10T20:07:47.7605963Z       31 | 		await expect(page.locator('.task-view h1.title.input')).toContainText('Groceries')
+e2e	Run e2e tests	2026-11-10T20:07:47.7606303Z       32 | 	})
+e2e	Run e2e tests	2026-11-10T20:07:47.7607003Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/misc/quick-actions.spec.ts:29:54
+e2e	Run e2e tests	2026-11-10T20:07:47.7607269Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7607682Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7608397Z     test-results/misc-quick-actions-Quick-a-a937b-ed-like-an-existing-project-chromium-retry1/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7609109Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7609325Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7609696Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7610489Z     test-results/misc-quick-actions-Quick-a-a937b-ed-like-an-existing-project-chromium-retry1/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7611181Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7611399Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7611902Z     Error Context: test-results/misc-quick-actions-Quick-a-a937b-ed-like-an-existing-project-chromium-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7612294Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7612682Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7613314Z     test-results/misc-quick-actions-Quick-a-a937b-ed-like-an-existing-project-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7613716Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7613813Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7614402Z         pnpm exec playwright show-trace test-results/misc-quick-actions-Quick-a-a937b-ed-like-an-existing-project-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7614817Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7615168Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7615377Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7615728Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7615968Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7616154Z     Error: expect(locator).toContainText(expected) failed
+e2e	Run e2e tests	2026-11-10T20:07:47.7616341Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7616493Z     Locator: locator('.global-notification')
+e2e	Run e2e tests	2026-11-10T20:07:47.7616836Z     Expected substring: "The task was successfully created"
+e2e	Run e2e tests	2026-11-10T20:07:47.7617115Z     Received string:    ""
+e2e	Run e2e tests	2026-11-10T20:07:47.7617320Z     Timeout: 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7617425Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7617504Z     Call log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7617900Z       - Expect "toContainText" locator('.global-notification') with timeout 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7618310Z       - waiting for locator('.global-notification')
+e2e	Run e2e tests	2026-11-10T20:07:47.7619145Z         14 × locator resolved to <div role="status" data-v-5e2f5b9b="" aria-live="polite" class="vue-notification-group global-notification">…</div>
+e2e	Run e2e tests	2026-11-10T20:07:47.7619668Z            - unexpected value ""
+e2e	Run e2e tests	2026-11-10T20:07:47.7619802Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7619807Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7619947Z       27 | 		await input.press('Enter')
+e2e	Run e2e tests	2026-11-10T20:07:47.7620598Z       28 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7621070Z     > 29 | 		await expect(page.locator('.global-notification')).toContainText('The task was successfully created')
+e2e	Run e2e tests	2026-11-10T20:07:47.7621590Z          | 		                                                   ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7621944Z       30 | 		await expect(page).toHaveURL(/\/tasks\/\d+/)
+e2e	Run e2e tests	2026-11-10T20:07:47.7622433Z       31 | 		await expect(page.locator('.task-view h1.title.input')).toContainText('Groceries')
+e2e	Run e2e tests	2026-11-10T20:07:47.7622774Z       32 | 	})
+e2e	Run e2e tests	2026-11-10T20:07:47.7623241Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/misc/quick-actions.spec.ts:29:54
+e2e	Run e2e tests	2026-11-10T20:07:47.7623515Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7623904Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7624576Z     test-results/misc-quick-actions-Quick-a-a937b-ed-like-an-existing-project-chromium-retry2/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7625280Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7625507Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7625878Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7626501Z     test-results/misc-quick-actions-Quick-a-a937b-ed-like-an-existing-project-chromium-retry2/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7627173Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7627388Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7627859Z     Error Context: test-results/misc-quick-actions-Quick-a-a937b-ed-like-an-existing-project-chromium-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7628238Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7628611Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7629232Z     test-results/misc-quick-actions-Quick-a-a937b-ed-like-an-existing-project-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7629634Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7629746Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7630539Z         pnpm exec playwright show-trace test-results/misc-quick-actions-Quick-a-a937b-ed-like-an-existing-project-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7630958Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7631316Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7631528Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7632107Z   4) [chromium] › tests/e2e/project/project-view-kanban.spec.ts:202:2 › Project View Kanban › Scrolls the board while dragging a task to a bucket off screen 
+e2e	Run e2e tests	2026-11-10T20:07:47.7632528Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7632746Z     Error: expect(received).toBe(expected) // Object.is equality
+e2e	Run e2e tests	2026-11-10T20:07:47.7632939Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7633033Z     Expected: true
+e2e	Run e2e tests	2026-11-10T20:07:47.7633218Z     Received: false
+e2e	Run e2e tests	2026-11-10T20:07:47.7633318Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7633395Z     Call Log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7633689Z     - Timeout 10000ms exceeded while waiting on the predicate
+e2e	Run e2e tests	2026-11-10T20:07:47.7633876Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7634358Z       223 | 			await page.mouse.move(nearRightEdge.x, nearRightEdge.y)
+e2e	Run e2e tests	2026-11-10T20:07:47.7634905Z       224 | 			return board.evaluate(el => el.scrollLeft + el.clientWidth >= el.scrollWidth - 1)
+e2e	Run e2e tests	2026-11-10T20:07:47.7635299Z     > 225 | 		}, {timeout: 10000}).toBe(true)
+e2e	Run e2e tests	2026-11-10T20:07:47.7635589Z           | 		                     ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7635803Z       226 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7636289Z       227 | 		const lastBucketTasks = page.locator(`.kanban .bucket[data-bucket-id="${lastBucket.id}"] .tasks`)
+e2e	Run e2e tests	2026-11-10T20:07:47.7636810Z       228 | 		const targetBox = await lastBucketTasks.boundingBox()
+e2e	Run e2e tests	2026-11-10T20:07:47.7637427Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/project/project-view-kanban.spec.ts:225:24
+e2e	Run e2e tests	2026-11-10T20:07:47.7637729Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7638126Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7638771Z     test-results/project-project-view-kanba-f5995-task-to-a-bucket-off-screen-chromium/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7639469Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7639679Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7640205Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7640829Z     test-results/project-project-view-kanba-f5995-task-to-a-bucket-off-screen-chromium/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7641480Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7641688Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7642131Z     Error Context: test-results/project-project-view-kanba-f5995-task-to-a-bucket-off-screen-chromium/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7642498Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7642872Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7643473Z     test-results/project-project-view-kanba-f5995-task-to-a-bucket-off-screen-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7643884Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7643969Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7644525Z         pnpm exec playwright show-trace test-results/project-project-view-kanba-f5995-task-to-a-bucket-off-screen-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7644918Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7645254Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7645469Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7645818Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7646033Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7646242Z     Error: expect(received).toBe(expected) // Object.is equality
+e2e	Run e2e tests	2026-11-10T20:07:47.7646434Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7646518Z     Expected: true
+e2e	Run e2e tests	2026-11-10T20:07:47.7646704Z     Received: false
+e2e	Run e2e tests	2026-11-10T20:07:47.7646808Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7646888Z     Call Log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7647170Z     - Timeout 10000ms exceeded while waiting on the predicate
+e2e	Run e2e tests	2026-11-10T20:07:47.7647575Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7647819Z       223 | 			await page.mouse.move(nearRightEdge.x, nearRightEdge.y)
+e2e	Run e2e tests	2026-11-10T20:07:47.7648341Z       224 | 			return board.evaluate(el => el.scrollLeft + el.clientWidth >= el.scrollWidth - 1)
+e2e	Run e2e tests	2026-11-10T20:07:47.7648725Z     > 225 | 		}, {timeout: 10000}).toBe(true)
+e2e	Run e2e tests	2026-11-10T20:07:47.7649024Z           | 		                     ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7649230Z       226 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7649711Z       227 | 		const lastBucketTasks = page.locator(`.kanban .bucket[data-bucket-id="${lastBucket.id}"] .tasks`)
+e2e	Run e2e tests	2026-11-10T20:07:47.7650442Z       228 | 		const targetBox = await lastBucketTasks.boundingBox()
+e2e	Run e2e tests	2026-11-10T20:07:47.7651059Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/project/project-view-kanban.spec.ts:225:24
+e2e	Run e2e tests	2026-11-10T20:07:47.7651364Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7651758Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7652431Z     test-results/project-project-view-kanba-f5995-task-to-a-bucket-off-screen-chromium-retry1/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7653143Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7653358Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7653728Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7654353Z     test-results/project-project-view-kanba-f5995-task-to-a-bucket-off-screen-chromium-retry1/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7655025Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7655240Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7655702Z     Error Context: test-results/project-project-view-kanba-f5995-task-to-a-bucket-off-screen-chromium-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7656097Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7656475Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7657101Z     test-results/project-project-view-kanba-f5995-task-to-a-bucket-off-screen-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7657538Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7657632Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7658224Z         pnpm exec playwright show-trace test-results/project-project-view-kanba-f5995-task-to-a-bucket-off-screen-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7658632Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7659005Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7659223Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7659572Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7659789Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7659997Z     Error: expect(received).toBe(expected) // Object.is equality
+e2e	Run e2e tests	2026-11-10T20:07:47.7660338Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7660429Z     Expected: true
+e2e	Run e2e tests	2026-11-10T20:07:47.7660613Z     Received: false
+e2e	Run e2e tests	2026-11-10T20:07:47.7660716Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7660793Z     Call Log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7661071Z     - Timeout 10000ms exceeded while waiting on the predicate
+e2e	Run e2e tests	2026-11-10T20:07:47.7661510Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7661747Z       223 | 			await page.mouse.move(nearRightEdge.x, nearRightEdge.y)
+e2e	Run e2e tests	2026-11-10T20:07:47.7662257Z       224 | 			return board.evaluate(el => el.scrollLeft + el.clientWidth >= el.scrollWidth - 1)
+e2e	Run e2e tests	2026-11-10T20:07:47.7662637Z     > 225 | 		}, {timeout: 10000}).toBe(true)
+e2e	Run e2e tests	2026-11-10T20:07:47.7662921Z           | 		                     ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7663123Z       226 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7663603Z       227 | 		const lastBucketTasks = page.locator(`.kanban .bucket[data-bucket-id="${lastBucket.id}"] .tasks`)
+e2e	Run e2e tests	2026-11-10T20:07:47.7664133Z       228 | 		const targetBox = await lastBucketTasks.boundingBox()
+e2e	Run e2e tests	2026-11-10T20:07:47.7664749Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/project/project-view-kanban.spec.ts:225:24
+e2e	Run e2e tests	2026-11-10T20:07:47.7665051Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7665434Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7666135Z     test-results/project-project-view-kanba-f5995-task-to-a-bucket-off-screen-chromium-retry2/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7666828Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7667046Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7667408Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7668037Z     test-results/project-project-view-kanba-f5995-task-to-a-bucket-off-screen-chromium-retry2/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7668707Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7668909Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7669378Z     Error Context: test-results/project-project-view-kanba-f5995-task-to-a-bucket-off-screen-chromium-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7669760Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7670217Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7670874Z     test-results/project-project-view-kanba-f5995-task-to-a-bucket-off-screen-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7671285Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7671368Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7671961Z         pnpm exec playwright show-trace test-results/project-project-view-kanba-f5995-task-to-a-bucket-off-screen-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7672374Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7672711Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7672924Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7673443Z   5) [chromium] › tests/e2e/project/project-view-list.spec.ts:258:2 › Project View List › Should search for a term entered in the filter input 
+e2e	Run e2e tests	2026-11-10T20:07:47.7673815Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7674019Z     Error: expect(page).toHaveURL(expected) failed
+e2e	Run e2e tests	2026-11-10T20:07:47.7674195Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7674328Z     Expected pattern: /[?&]s=meeting/
+e2e	Run e2e tests	2026-11-10T20:07:47.7674709Z     Received string:  "http://127.0.0.1:4173/projects/1/1?filter=meeting"
+e2e	Run e2e tests	2026-11-10T20:07:47.7675271Z     Timeout: 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7675370Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7675454Z     Call log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7675708Z       - Expect "toHaveURL" with timeout 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7676227Z         14 × locator resolved to <html lang="en" dir="ltr" class="light">…</html>
+e2e	Run e2e tests	2026-11-10T20:07:47.7676771Z            - unexpected value "http://127.0.0.1:4173/projects/1/1?filter=meeting"
+e2e	Run e2e tests	2026-11-10T20:07:47.7676996Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7677001Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7677351Z       267 | 		await page.locator('.filter-popup button').filter({hasText: 'Show results'}).click()
+e2e	Run e2e tests	2026-11-10T20:07:47.7677699Z       268 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7677970Z     > 269 | 		await expect(page).toHaveURL(/[?&]s=meeting/)
+e2e	Run e2e tests	2026-11-10T20:07:47.7678290Z           | 		                   ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7678708Z       270 | 		await expect(page.locator('.tasks')).toContainText(searchableTask.title)
+e2e	Run e2e tests	2026-11-10T20:07:47.7679194Z       271 | 		await expect(page.locator('.tasks .task')).toHaveCount(1)
+e2e	Run e2e tests	2026-11-10T20:07:47.7679491Z       272 | 	})
+e2e	Run e2e tests	2026-11-10T20:07:47.7680003Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/project/project-view-list.spec.ts:269:22
+e2e	Run e2e tests	2026-11-10T20:07:47.7680448Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7680828Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7681481Z     test-results/project-project-view-list--81230-entered-in-the-filter-input-chromium/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7682152Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7682360Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7682727Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7683321Z     test-results/project-project-view-list--81230-entered-in-the-filter-input-chromium/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7683972Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7684207Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7684646Z     Error Context: test-results/project-project-view-list--81230-entered-in-the-filter-input-chromium/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7685013Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7685387Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7685982Z     test-results/project-project-view-list--81230-entered-in-the-filter-input-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7686368Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7686454Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7687007Z         pnpm exec playwright show-trace test-results/project-project-view-list--81230-entered-in-the-filter-input-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7687395Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7687736Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7687951Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7688293Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7688738Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7688903Z     Error: expect(page).toHaveURL(expected) failed
+e2e	Run e2e tests	2026-11-10T20:07:47.7689065Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7689202Z     Expected pattern: /[?&]s=meeting/
+e2e	Run e2e tests	2026-11-10T20:07:47.7689587Z     Received string:  "http://127.0.0.1:4173/projects/1/1?filter=meeting"
+e2e	Run e2e tests	2026-11-10T20:07:47.7689891Z     Timeout: 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7689996Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7690233Z     Call log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7690514Z       - Expect "toHaveURL" with timeout 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7691031Z         14 × locator resolved to <html lang="en" dir="ltr" class="light">…</html>
+e2e	Run e2e tests	2026-11-10T20:07:47.7691577Z            - unexpected value "http://127.0.0.1:4173/projects/1/1?filter=meeting"
+e2e	Run e2e tests	2026-11-10T20:07:47.7691801Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7691807Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7692154Z       267 | 		await page.locator('.filter-popup button').filter({hasText: 'Show results'}).click()
+e2e	Run e2e tests	2026-11-10T20:07:47.7692494Z       268 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7692760Z     > 269 | 		await expect(page).toHaveURL(/[?&]s=meeting/)
+e2e	Run e2e tests	2026-11-10T20:07:47.7693081Z           | 		                   ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7693496Z       270 | 		await expect(page.locator('.tasks')).toContainText(searchableTask.title)
+e2e	Run e2e tests	2026-11-10T20:07:47.7693963Z       271 | 		await expect(page.locator('.tasks .task')).toHaveCount(1)
+e2e	Run e2e tests	2026-11-10T20:07:47.7694235Z       272 | 	})
+e2e	Run e2e tests	2026-11-10T20:07:47.7694745Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/project/project-view-list.spec.ts:269:22
+e2e	Run e2e tests	2026-11-10T20:07:47.7695045Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7695424Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7696098Z     test-results/project-project-view-list--81230-entered-in-the-filter-input-chromium-retry1/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7696810Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7697025Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7697390Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7698061Z     test-results/project-project-view-list--81230-entered-in-the-filter-input-chromium-retry1/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7698741Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7698955Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7699427Z     Error Context: test-results/project-project-view-list--81230-entered-in-the-filter-input-chromium-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7699810Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7700274Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7700899Z     test-results/project-project-view-list--81230-entered-in-the-filter-input-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7701310Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7701394Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7701989Z         pnpm exec playwright show-trace test-results/project-project-view-list--81230-entered-in-the-filter-input-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7702640Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7702985Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7703199Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7703543Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7703765Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7703931Z     Error: expect(page).toHaveURL(expected) failed
+e2e	Run e2e tests	2026-11-10T20:07:47.7704094Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7704229Z     Expected pattern: /[?&]s=meeting/
+e2e	Run e2e tests	2026-11-10T20:07:47.7704596Z     Received string:  "http://127.0.0.1:4173/projects/1/1?filter=meeting"
+e2e	Run e2e tests	2026-11-10T20:07:47.7704892Z     Timeout: 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7704996Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7705080Z     Call log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7705328Z       - Expect "toHaveURL" with timeout 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7705831Z         14 × locator resolved to <html lang="en" dir="ltr" class="light">…</html>
+e2e	Run e2e tests	2026-11-10T20:07:47.7706371Z            - unexpected value "http://127.0.0.1:4173/projects/1/1?filter=meeting"
+e2e	Run e2e tests	2026-11-10T20:07:47.7706614Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7706620Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7706959Z       267 | 		await page.locator('.filter-popup button').filter({hasText: 'Show results'}).click()
+e2e	Run e2e tests	2026-11-10T20:07:47.7707303Z       268 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7707566Z     > 269 | 		await expect(page).toHaveURL(/[?&]s=meeting/)
+e2e	Run e2e tests	2026-11-10T20:07:47.7707872Z           | 		                   ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7708286Z       270 | 		await expect(page.locator('.tasks')).toContainText(searchableTask.title)
+e2e	Run e2e tests	2026-11-10T20:07:47.7708748Z       271 | 		await expect(page.locator('.tasks .task')).toHaveCount(1)
+e2e	Run e2e tests	2026-11-10T20:07:47.7709025Z       272 | 	})
+e2e	Run e2e tests	2026-11-10T20:07:47.7709524Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/project/project-view-list.spec.ts:269:22
+e2e	Run e2e tests	2026-11-10T20:07:47.7709819Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7710277Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7710953Z     test-results/project-project-view-list--81230-entered-in-the-filter-input-chromium-retry2/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7711672Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7711879Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7712245Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7712863Z     test-results/project-project-view-list--81230-entered-in-the-filter-input-chromium-retry2/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7713533Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7713750Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7714214Z     Error Context: test-results/project-project-view-list--81230-entered-in-the-filter-input-chromium-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7714596Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7714969Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7715588Z     test-results/project-project-view-list--81230-entered-in-the-filter-input-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7716224Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7716317Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7716915Z         pnpm exec playwright show-trace test-results/project-project-view-list--81230-entered-in-the-filter-input-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7717328Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7717678Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7717889Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7718315Z   6) [chromium] › tests/e2e/task/comment-crud.spec.ts:42:1 › comments by another user can be replied to but not edited 
+e2e	Run e2e tests	2026-11-10T20:07:47.7718638Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7718821Z     Error: expect(locator).toHaveCount(expected) failed
+e2e	Run e2e tests	2026-11-10T20:07:47.7718993Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7719279Z     Locator:  locator('#comment-1').getByRole('button', { name: 'Edit', exact: true })
+e2e	Run e2e tests	2026-11-10T20:07:47.7719601Z     Expected: 0
+e2e	Run e2e tests	2026-11-10T20:07:47.7719771Z     Received: 1
+e2e	Run e2e tests	2026-11-10T20:07:47.7719969Z     Timeout:  5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7720198Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7720283Z     Call log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7720807Z       - Expect "toHaveCount" locator('#comment-1').getByRole('button', { name: 'Edit', exact: true }) with timeout 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7721431Z       - waiting for locator('#comment-1').getByRole('button', { name: 'Edit', exact: true })
+e2e	Run e2e tests	2026-11-10T20:07:47.7721882Z         14 × locator resolved to 1 element
+e2e	Run e2e tests	2026-11-10T20:07:47.7722177Z            - unexpected value "1"
+e2e	Run e2e tests	2026-11-10T20:07:47.7722314Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7722319Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7722640Z       55 | 	await expect(mine.getByRole('button', {name: 'Edit', exact: true})).toBeVisible()
+e2e	Run e2e tests	2026-11-10T20:07:47.7723220Z       56 | 	await expect(theirs.getByRole('button', {name: 'Reply', exact: true})).toBeVisible()
+e2e	Run e2e tests	2026-11-10T20:07:47.7723759Z     > 57 | 	await expect(theirs.getByRole('button', {name: 'Edit', exact: true})).toHaveCount(0)
+e2e	Run e2e tests	2026-11-10T20:07:47.7724264Z          | 	                                                                      ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7724537Z       58 | })
+e2e	Run e2e tests	2026-11-10T20:07:47.7724698Z       59 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7725150Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/task/comment-crud.spec.ts:57:72
+e2e	Run e2e tests	2026-11-10T20:07:47.7725416Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7725796Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7726445Z     test-results/task-comment-crud-comments-64d04-e-replied-to-but-not-edited-chromium/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7727118Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7727328Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7727698Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7728292Z     test-results/task-comment-crud-comments-64d04-e-replied-to-but-not-edited-chromium/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7728946Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7729374Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7729807Z     Error Context: test-results/task-comment-crud-comments-64d04-e-replied-to-but-not-edited-chromium/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7730343Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7730724Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7731356Z     test-results/task-comment-crud-comments-64d04-e-replied-to-but-not-edited-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7731740Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7731820Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7732372Z         pnpm exec playwright show-trace test-results/task-comment-crud-comments-64d04-e-replied-to-but-not-edited-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7732785Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7733132Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7733357Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7733717Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7733965Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7734157Z     Error: expect(locator).toHaveCount(expected) failed
+e2e	Run e2e tests	2026-11-10T20:07:47.7734327Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7734604Z     Locator:  locator('#comment-1').getByRole('button', { name: 'Edit', exact: true })
+e2e	Run e2e tests	2026-11-10T20:07:47.7734915Z     Expected: 0
+e2e	Run e2e tests	2026-11-10T20:07:47.7735094Z     Received: 1
+e2e	Run e2e tests	2026-11-10T20:07:47.7735270Z     Timeout:  5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7735371Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7735454Z     Call log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7735977Z       - Expect "toHaveCount" locator('#comment-1').getByRole('button', { name: 'Edit', exact: true }) with timeout 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7736601Z       - waiting for locator('#comment-1').getByRole('button', { name: 'Edit', exact: true })
+e2e	Run e2e tests	2026-11-10T20:07:47.7737043Z         14 × locator resolved to 1 element
+e2e	Run e2e tests	2026-11-10T20:07:47.7737330Z            - unexpected value "1"
+e2e	Run e2e tests	2026-11-10T20:07:47.7737463Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7737467Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7737799Z       55 | 	await expect(mine.getByRole('button', {name: 'Edit', exact: true})).toBeVisible()
+e2e	Run e2e tests	2026-11-10T20:07:47.7738357Z       56 | 	await expect(theirs.getByRole('button', {name: 'Reply', exact: true})).toBeVisible()
+e2e	Run e2e tests	2026-11-10T20:07:47.7738900Z     > 57 | 	await expect(theirs.getByRole('button', {name: 'Edit', exact: true})).toHaveCount(0)
+e2e	Run e2e tests	2026-11-10T20:07:47.7739398Z          | 	                                                                      ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7739651Z       58 | })
+e2e	Run e2e tests	2026-11-10T20:07:47.7739812Z       59 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7740372Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/task/comment-crud.spec.ts:57:72
+e2e	Run e2e tests	2026-11-10T20:07:47.7740648Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7741038Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7741718Z     test-results/task-comment-crud-comments-64d04-e-replied-to-but-not-edited-chromium-retry1/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7742421Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7742656Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7743017Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7743646Z     test-results/task-comment-crud-comments-64d04-e-replied-to-but-not-edited-chromium-retry1/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7744378Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7744594Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7745058Z     Error Context: test-results/task-comment-crud-comments-64d04-e-replied-to-but-not-edited-chromium-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7745451Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7745828Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7746448Z     test-results/task-comment-crud-comments-64d04-e-replied-to-but-not-edited-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7746981Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7747181Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7748070Z         pnpm exec playwright show-trace test-results/task-comment-crud-comments-64d04-e-replied-to-but-not-edited-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7748796Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7749290Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7749520Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7749877Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7750233Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7750416Z     Error: expect(locator).toHaveCount(expected) failed
+e2e	Run e2e tests	2026-11-10T20:07:47.7750592Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7750863Z     Locator:  locator('#comment-1').getByRole('button', { name: 'Edit', exact: true })
+e2e	Run e2e tests	2026-11-10T20:07:47.7751185Z     Expected: 0
+e2e	Run e2e tests	2026-11-10T20:07:47.7751373Z     Received: 1
+e2e	Run e2e tests	2026-11-10T20:07:47.7751552Z     Timeout:  5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7751655Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7751744Z     Call log:
+e2e	Run e2e tests	2026-11-10T20:07:47.7752294Z       - Expect "toHaveCount" locator('#comment-1').getByRole('button', { name: 'Edit', exact: true }) with timeout 5000ms
+e2e	Run e2e tests	2026-11-10T20:07:47.7752920Z       - waiting for locator('#comment-1').getByRole('button', { name: 'Edit', exact: true })
+e2e	Run e2e tests	2026-11-10T20:07:47.7753370Z         14 × locator resolved to 1 element
+e2e	Run e2e tests	2026-11-10T20:07:47.7753660Z            - unexpected value "1"
+e2e	Run e2e tests	2026-11-10T20:07:47.7753786Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7753792Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7754117Z       55 | 	await expect(mine.getByRole('button', {name: 'Edit', exact: true})).toBeVisible()
+e2e	Run e2e tests	2026-11-10T20:07:47.7754684Z       56 | 	await expect(theirs.getByRole('button', {name: 'Reply', exact: true})).toBeVisible()
+e2e	Run e2e tests	2026-11-10T20:07:47.7755224Z     > 57 | 	await expect(theirs.getByRole('button', {name: 'Edit', exact: true})).toHaveCount(0)
+e2e	Run e2e tests	2026-11-10T20:07:47.7755724Z          | 	                                                                      ^
+e2e	Run e2e tests	2026-11-10T20:07:47.7755973Z       58 | })
+e2e	Run e2e tests	2026-11-10T20:07:47.7756130Z       59 |
+e2e	Run e2e tests	2026-11-10T20:07:47.7756795Z         at /__w/vikunja-c0a44a/vikunja-c0a44a/frontend/tests/e2e/task/comment-crud.spec.ts:57:72
+e2e	Run e2e tests	2026-11-10T20:07:47.7757067Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7757468Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7758151Z     test-results/task-comment-crud-comments-64d04-e-replied-to-but-not-edited-chromium-retry2/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T20:07:47.7758853Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7759068Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7759428Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7760197Z     test-results/task-comment-crud-comments-64d04-e-replied-to-but-not-edited-chromium-retry2/video.webm
+e2e	Run e2e tests	2026-11-10T20:07:47.7760886Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7761100Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7761831Z     Error Context: test-results/task-comment-crud-comments-64d04-e-replied-to-but-not-edited-chromium-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T20:07:47.7762218Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7762594Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7763227Z     test-results/task-comment-crud-comments-64d04-e-replied-to-but-not-edited-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7763625Z     Usage:
+e2e	Run e2e tests	2026-11-10T20:07:47.7763720Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7764309Z         pnpm exec playwright show-trace test-results/task-comment-crud-comments-64d04-e-replied-to-but-not-edited-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T20:07:47.7764722Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7765068Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T20:07:47.7765278Z 
+e2e	Run e2e tests	2026-11-10T20:07:47.7765355Z   6 failed
+e2e	Run e2e tests	2026-11-10T20:07:47.7765969Z     [chromium] › tests/e2e/editor/copy-as-text.spec.ts:10:2 › Editor copy as plain text › keeps the list markers of a copied bullet list 
+e2e	Run e2e tests	2026-11-10T20:07:47.7766819Z     [chromium] › tests/e2e/migrate/csv.spec.ts:18:1 › CSV import page highlights the import item in the settings navigation 
+e2e	Run e2e tests	2026-11-10T20:07:47.7767625Z     [chromium] › tests/e2e/misc/quick-actions.spec.ts:7:2 › Quick actions › Creates a new task named like an existing project 
+e2e	Run e2e tests	2026-11-10T20:07:47.7768555Z     [chromium] › tests/e2e/project/project-view-kanban.spec.ts:202:2 › Project View Kanban › Scrolls the board while dragging a task to a bucket off screen 
+e2e	Run e2e tests	2026-11-10T20:07:47.7769507Z     [chromium] › tests/e2e/project/project-view-list.spec.ts:258:2 › Project View List › Should search for a term entered in the filter input 
+e2e	Run e2e tests	2026-11-10T20:07:47.7770517Z     [chromium] › tests/e2e/task/comment-crud.spec.ts:42:1 › comments by another user can be replied to but not edited 
+e2e	Run e2e tests	2026-11-10T20:07:47.7770925Z   140 passed (8.5m)
+e2e	Run e2e tests	2026-11-10T20:07:47.7928655Z [ELIFECYCLE] Command failed with exit code 1.
+e2e	Run e2e tests	2026-11-10T20:07:47.8354790Z ##[error]Process completed with exit code 1.
